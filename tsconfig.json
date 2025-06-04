@@ -5,8 +5,11 @@
     "moduleResolution": "node",
     "esModuleInterop": true,
     "resolveJsonModule": true,
-    "strict": true
+    "strict": true,
+    "outDir": "dist",        // 👈 Thêm dòng này
+    "rootDir": "src"         // 👈 Và dòng này
   },
+  "include": ["src"],        // 👈 Thêm dòng này để chỉ định nơi chứa source
   "ts-node": {
     "esm": true
   }
